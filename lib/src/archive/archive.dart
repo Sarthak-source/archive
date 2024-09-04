@@ -13,7 +13,7 @@ class Archive extends IterableBase<ArchiveFile> {
   String? comment;
 
   /// Unmodifiable view of the files in the archive.
-  List<ArchiveFile> get files => UnmodifiableListView(_files);
+  List<ArchiveFile> get files => _files;
 
   /// Add a file or directory to the archive.
   void add(ArchiveFile file) {
